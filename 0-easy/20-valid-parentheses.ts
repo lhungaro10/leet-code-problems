@@ -21,4 +21,6 @@ function isValid(s: string): boolean {
   return stack.length === 0
 };
 
-console.log(isValid(string))
+export function execute(){
+  console.log(isValid(string)) 
+}

@@ -27,5 +27,7 @@ function romanToInt(romanNumber: string): number {
     return total;
 };
 
-romanToInt(s)
+export function execute(){
+    romanToInt(s)
+}
  

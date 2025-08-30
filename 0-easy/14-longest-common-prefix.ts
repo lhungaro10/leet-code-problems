@@ -17,5 +17,6 @@ function longestCommonPrefix(strs: string[]): string {
     }
     return longestPrefix.length  > 0 ? longestPrefix : "";
 };
-
-console.log(longestCommonPrefix(words))
+export function execute(){
+  console.log(longestCommonPrefix(words)) 
+}

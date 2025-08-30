@@ -10,7 +10,11 @@
     },
 
     "compilerOptions": {
-      "module": "node16",
-      "moduleResolution": "Node16"
+      "module": "CommonJS",       // Alterado de node16 para CommonJS
+      "moduleResolution": "node", // Alterado de node16 para node
+      "target": "ES2020",         // Define o target ES
+      "esModuleInterop": true,    // Permite interoperabilidade entre CommonJS e ES modules
+      "resolveJsonModule": true,  // Permite importar arquivos JSON
+      "allowSyntheticDefaultImports": true // Permite importações sintéticas padrão
     }
   }

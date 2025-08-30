@@ -12,5 +12,6 @@ function isPalindrome(x: number): boolean {
     return true;  
 };
 
-
-console.log(isPalindrome(x) ? "É palindromo": "Não é palindromo");
+export function execute(){
+    console.log(isPalindrome(x) ? "É palindromo": "Não é palindromo");
+}

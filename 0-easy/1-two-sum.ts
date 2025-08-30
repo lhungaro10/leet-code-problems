@@ -14,5 +14,7 @@ function twoSum(nums: number[], target: number): number[] {
     return []
 };
 
-console.log("indexes: ", twoSum(nums, target));
+export function execute(){
+    console.log("indexes: ", twoSum(nums, target));
+}
  
