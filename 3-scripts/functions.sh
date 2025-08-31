@@ -14,11 +14,18 @@ create_file() {
   
   echo "Created file: $directory/$normalized_name"
   
-  # Opcionalmente, preencha o arquivo com um template básico
-  echo "// Problem ${id}: ${name}" > "$directory/$normalized_name"
-  echo "export function solution() {" >> "$directory/$normalized_name"
-  echo "  // Implemente sua solução aqui" >> "$directory/$normalized_name"
-  echo "}" >> "$directory/$normalized_name"
+  # Preenche o arquivo com um template básico incluindo a função execute()
+  cat > "$directory/$normalized_name" << EOL
+// Problem ${id}: ${name}
+export function solution() {
+  
+}
+
+export function execute() {
+  
+  
+}
+EOL
 }
 
 normalize_name_file() {
@@ -34,4 +41,3 @@ normalize_name_file() {
   # Retorna o nome formatado
   echo "${id}-${normalized_name}.ts"
 }
-
