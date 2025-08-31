@@ -1,4 +1,4 @@
-// 
+// solved
 // Problem 1: Two Sum
 const nums = [3,3];
 const target = 6;
