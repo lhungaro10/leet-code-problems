@@ -5,6 +5,27 @@ Only for personal development.
 
 ## Ranking
 
+| Developer | Easy | Medium | Hard | Total |
+|-----------|------|--------|------|-------|
+| vinicius-hungaro | 0/1 | 0/0 | 0/0 | 0/1 |
+| lucas-hungaro | 5/5 | 1/2 | 1/1 | 7/8 |
+
+### Solved Problems by Developer
+
+#### lucas-hungaro
+
+**Easy Problems (5):**
+- Two Sum
+- Romam to Integer
+- Longest commom prefix
+- Valid Parantheses
+- Palindrome Number
+
+**Medium Problems (1):**
+- Add two Numbers
+
+**Hard Problems (1):**
+- Median of two sorted arrays
 
 ## How to contribute
 
@@ -102,4 +123,3 @@ git push
 | `make update-all` | Update indexes + ranking | ❌ **Don't use** - automated |
 | `make run` | Run main.ts | ✅ Developers |
 
-> ⚠️ **Note**: The `update-ranking` and `update-all` commands are handled automatically by GitHub Actions. Running them manually may cause conflicts when pushing to master.
