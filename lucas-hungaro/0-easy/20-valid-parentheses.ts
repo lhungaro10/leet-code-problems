@@ -1,3 +1,5 @@
+//solved
+// Problem 20: Valid Parantheses
 const string = "{([])}"
 
 function isValid(s: string): boolean {

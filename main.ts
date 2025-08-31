@@ -1,4 +1,4 @@
-import { solution2, solution3 } from "./1-medium";
-import { solution4 } from "./2-hard";
+import { solution2 } from "./lucas-hungaro/1-medium";
 
-solution3()
+
+solution2()

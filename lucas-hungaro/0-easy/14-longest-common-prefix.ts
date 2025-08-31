@@ -1,4 +1,5 @@
-
+//solved
+// Problem 14: Longest commom prefix
 const words = ["dog","racecar","car"]
 
 function longestCommonPrefix(strs: string[]): string {

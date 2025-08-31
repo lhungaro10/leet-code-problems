@@ -1,15 +1,29 @@
-#!/bin/zsh
+#!/bin/bash
 
 create_file() {
   local id=$1
   local name=$2
   local difficulty=$3
+  local contributor=$4
+  
+  # Se não foi fornecido um contribuidor, pergunta
+  if [ -z "$contributor" ]; then
+    echo "Digite o nome do contribuidor (pasta):"
+    read contributor
+  fi
   
   # Normaliza o nome diretamente com a função bash
   local normalized_name=$(normalize_name_file "$id" "$name")
   
-  # Cria o arquivo na pasta apropriada
-  local directory="/home/hungaro/projetos/leet-code-problems/$difficulty"
+  # Usa caminho relativo baseado no diretório atual do script
+  local script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+  local project_root="$(dirname "$script_dir")"
+  local directory="$project_root/$contributor/$difficulty"
+  
+  # Cria o diretório se não existir
+  mkdir -p "$directory"
+  
+  # Cria o arquivo
   touch "$directory/$normalized_name"
   
   echo "Created file: $directory/$normalized_name"
@@ -22,7 +36,6 @@ export function solution() {
 }
 
 export function execute() {
-  
   
 }
 EOL

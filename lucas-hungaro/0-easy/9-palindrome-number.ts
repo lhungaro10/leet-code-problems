@@ -1,3 +1,5 @@
+// solved
+// Problem 9: Palindrome Number
 const x = 10
 
 function isPalindrome(x: number): boolean {

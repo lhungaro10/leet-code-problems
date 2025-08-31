@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 source /home/hungaro/projetos/leet-code-problems/3-scripts/functions.sh
 
 echo "Type the ID of the LeetCode problem, followed by [ENTER]:"
