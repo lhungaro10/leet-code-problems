@@ -12,47 +12,24 @@ function lengthOfLongestSubstring(s: string): number {
   let isWindowActive = false
   let currentMaxLength = 0;
   
+  if(s.length < 1) return 0
+  if(s.length == 1) return 1
   
-  if(s.length < 1){
-    return 0
-  }
+  
   
   // percorrer a string, verificando:
   for(let i= 0; i < s.length; i++){
-    // console.debug("MaxLength: ", maxlength)
-    // console.debug("CurrentMaxLength: ", currentMaxLength)
-    console.debug(`=== ${i} ===`)
-    console.debug("s.slice(begin, end+1) :", !s.substring(begin, end+1).includes(s[i]))
-    console.debug("isWindowActive: ", isWindowActive)
-    console.debug("begin: ", begin)
-    console.debug("end: ", end)
-    let interval = s.substring(begin, end +1)
-    if(interval.length > 0 && interval.includes(s[i])){
-      if(isWindowActive){
-        //se a Janela está ativa 
-        end = i
-      } else {
-        //se a Janela não está ativa 
-        begin = i
-        end = i
-        isWindowActive = true
-      }
-    } else {
-      console.debug("isWindowActive: ",isWindowActive)
-      // senão (caso a letra anterior for igual a atual)
-      if(isWindowActive){
-        //se a Janela está ativa 
-        currentMaxLength =  end - begin + 1
-        maxlength = (currentMaxLength > maxlength)? currentMaxLength : maxlength;
-        begin = i + 1
-        isWindowActive = false
-      } else {
-        begin = i
-        
-      }
-      
-    }
+    let interval = s.substring(begin, end+1)
+      // caso a letra for diferente da substring da janela
 
+        //se a Janela está ativa 
+        //se a Janela não está ativa 
+      // senão (caso a letra anterior for igual a atual)
+        // A letra é igual, a janela está ativa
+          // precisa atualizar o maxLength se necessário
+          // o begin será o i + 1, já que já analisamos o i
+          // e desativamos a janela
+    
   }
 
   if(isWindowActive){
